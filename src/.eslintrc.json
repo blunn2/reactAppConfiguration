@@ -1,0 +1,22 @@
+{
+  "extends": ["eslint:recommended", "google"],
+  "rules": {
+    "require-jsdoc": ["error", {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": false,
+        "ClassDeclaration": false,
+        "ArrowFunctionExpression": false,
+        "FunctionExpression": false
+      }
+    }]
+  },
+  "plugins": [
+  	"react"
+  ],
+  "ecmaFeatures": {
+  	"jsx": true,
+  	"modules": true
+  },
+  "parser": "babel-eslint"
+}
